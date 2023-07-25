@@ -1,0 +1,41 @@
+@import url('reset.css');
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: aqua;
+    /* background: url("/assets/images/cover-image.png"), lightgray 50% / cover no-repeat;
+    background-size: 100%; */
+    height: 47vh;
+}
+
+.content-container {
+    height: 47vh;
+}
+
+.content-1 {
+    background-color: lightsalmon;
+}
+
+.content-2 {
+    background-color: lightgreen;
+}
+
+.content-3 {
+    background-color: lightpink;
+}
+
+.content-4 {
+    background-color: lightseagreen;
+    height: 70vh;
+}
+
+footer {
+    height: 14vh;
+    background-color: lightslategray;
+    color: white;
+}
