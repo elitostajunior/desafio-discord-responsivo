@@ -19,7 +19,6 @@ header {
 .header-text {
     width: 50vw;
     color: #ffffff;
-    border: 1px solid lightsalmon;
     text-align: center;
 }
 
@@ -34,17 +33,49 @@ header {
     padding: 0 10vw;
 }
 
-.header-text p, .header-buttons {
+.header-text p, .button {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.2rem;
 }
 
-/* #btn-white {
-    background-color: #ffffff;
+.button {
+    border: none;
+    padding: 13px 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
     border-radius: 28px;
+}
 
-} */
+.button a {
+    text-decoration: none;
+}
+
+#btn-white {
+    background-color: #ffffff;
+    margin-right: 16px;
+}
+
+#btn-white a {
+    color: #23272A;
+}
+
+#btn-black {
+    background-color: #23272A;
+}
+
+#btn-black a {
+    color: #ffffff;
+}
+
+#btn-white:hover {
+    background-color: #dfdfdf;
+}
+
+#btn-black:hover {
+    background-color: #34383b;
+}
 
 .content-container {
     height: 60vh;
