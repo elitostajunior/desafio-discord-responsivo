@@ -7,14 +7,47 @@ body {
 }
 
 header {
-    background-color: aqua;
-    /* background: url("/assets/images/cover-image.png"), lightgray 50% / cover no-repeat;
-    background-size: 100%; */
-    height: 47vh;
+    background: url("/assets/images/cover-image.png") no-repeat 70% 100%;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.header-text {
+    width: 50vw;
+    color: #ffffff;
+    border: 1px solid lightsalmon;
+    text-align: center;
+}
+
+.header-text h1, .header-text p {
+    margin-bottom: 1.5rem;
+}
+
+.header-text h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 200;
+    font-size: 4rem;
+    padding: 0 10vw;
+}
+
+.header-text p, .header-buttons {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+/* #btn-white {
+    background-color: #ffffff;
+    border-radius: 28px;
+
+} */
+
 .content-container {
-    height: 47vh;
+    height: 60vh;
 }
 
 .content-1 {
@@ -29,13 +62,13 @@ header {
     background-color: lightpink;
 }
 
-.content-4 {
+.content-container-bottom {
     background-color: lightseagreen;
-    height: 70vh;
+    height: 80vh;
 }
 
 footer {
-    height: 14vh;
+    height: 20vh;
     background-color: lightslategray;
     color: white;
 }
