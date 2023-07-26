@@ -9,7 +9,7 @@ body {
 header {
     background: url("/assets/images/cover-image.png") no-repeat 70% 100%;
     background-size: cover;
-    height: 60vh;
+    min-height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +23,7 @@ header {
 }
 
 .header-text h1, .header-text p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .header-text h1 {
@@ -37,6 +37,13 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
+}
+
+.header-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
 }
 
 .button {
@@ -54,7 +61,6 @@ header {
 
 #btn-white {
     background-color: #ffffff;
-    margin-right: 16px;
 }
 
 #btn-white a {
@@ -78,23 +84,46 @@ header {
 }
 
 .content-container {
-    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    height: 65vh;
+    gap: 2rem;
 }
 
-.content-1 {
-    background-color: lightsalmon;
+.content-text {
+    font-family: 'Open Sans', sans-serif;
+    width: 383px;
+    padding: 10px 5px;
+    color: #23272A;
 }
 
-.content-2 {
-    background-color: lightgreen;
+.content-text h2 {
+    width: 90%;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.content-3 {
-    background-color: lightpink;
+.content-text p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.background-white {
+    background-color: #ffffff;
+}
+
+.background-gray {
+    background-color: #f6f6f6;
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
 
 .content-container-bottom {
-    background-color: lightseagreen;
     height: 80vh;
 }
 
