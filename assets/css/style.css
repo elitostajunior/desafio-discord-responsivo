@@ -6,6 +6,10 @@ body {
     flex-direction: column;
 }
 
+header, .content-container, .content-container-bottom, footer {
+    padding: 2rem 0;
+}
+
 header {
     background: url("/assets/images/cover-image.png") no-repeat 70% 100%;
     background-size: cover;
@@ -17,9 +21,9 @@ header {
 }
 
 .header-text {
-    width: 50vw;
     color: #ffffff;
     text-align: center;
+    width: 900px;
 }
 
 .header-text h1, .header-text p {
@@ -88,7 +92,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;    
-    height: 65vh;
+    min-height: 60vh;
     gap: 2rem;
 }
 
@@ -124,11 +128,33 @@ header {
 }
 
 .content-container-bottom {
-    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+    color: #23272A;
+}
+
+.content-container-bottom h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 200;
+    font-size: 2.5rem;
+    width: 610px;
+}
+
+.content-container-bottom p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 1rem 0;
+    width: 880px;
 }
 
 footer {
-    height: 20vh;
-    background-color: lightslategray;
-    color: white;
+    min-height: 15vh;
+    background-color: #23272A;
+    display: flex;
+    justify-content: center;
 }
