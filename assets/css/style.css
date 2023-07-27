@@ -1,7 +1,6 @@
 @import url('reset.css');
 
 body {
-    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -87,13 +86,20 @@ header {
     background-color: #34383b;
 }
 
-.content-container {
+.content-container, .content-container-bottom {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;    
     min-height: 60vh;
+}
+
+.content-container {
+    flex-direction: row;
     gap: 2rem;
+}
+
+.content-container-bottom {
+    flex-direction: column;
 }
 
 .content-text {
@@ -115,6 +121,27 @@ header {
     font-size: 1rem;
 }
 
+.content-text-bottom {
+    width: 900px;
+    text-align: center;
+    color: #23272A;
+    padding: 10px 5px;
+}
+
+.content-text-bottom h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 200;
+    font-size: 2.8rem;
+    padding: 0 10vw;
+}
+
+.content-text-bottom p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
 .background-white {
     background-color: #ffffff;
 }
@@ -127,34 +154,39 @@ header {
     flex-direction: row-reverse;
 }
 
-.content-container-bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 90vh;
-    color: #23272A;
-}
-
-.content-container-bottom h2 {
-    font-family: 'Luckiest Guy', cursive;
-    font-weight: 200;
-    font-size: 2.5rem;
-    width: 610px;
-}
-
-.content-container-bottom p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    margin: 1rem 0;
-    width: 880px;
-}
-
 footer {
     min-height: 15vh;
     background-color: #23272A;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+    header, .content-container, .content-container-bottom, footer {
+        padding: 3rem 1rem;
+    }
+
+    .header-text, .content-text, .content-text-bottom {
+        width: 90vw;
+    }
+
+    .header-text h1 {
+        font-size: 3rem;
+    }
+
+    .header-buttons, .content-container {
+        flex-direction: column;
+    }
+
+    .content-container img, .content-container-bottom img {
+        width: 80vw;
+    }
+
+    .content-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .content-text-bottom h2 {
+        font-size: 2.3rem;
+    }
 }
