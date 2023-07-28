@@ -4,6 +4,8 @@ Fiz o desafio proposto no curso de CSS da DIO, em que precisei reproduzir os ele
 
 Com esse projeto, pude reforçar meus conhecimentos em estilização de sites responsivos.
 
+Projeto feito apenas para fins didáticos.
+
 ### Tecnologias utilizadas:
 
 - HTML
